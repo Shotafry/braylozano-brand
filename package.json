@@ -1,6 +1,6 @@
 {
   "name": "@braylozano/brand",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tokens, logotipo y guia de marca de Bray Lozano",
   "scripts": {
     "test": "vitest run",
@@ -25,7 +25,10 @@
   "exports": {
     "./tokens.css": "./tokens.css",
     "./preset.css": "./preset.css",
-    "./geometria": "./scripts/geometria.mjs",
+    "./geometria": {
+      "types": "./scripts/geometria.d.mts",
+      "default": "./scripts/geometria.mjs"
+    },
     "./svg/*": "./svg/*"
   },
   "files": [
