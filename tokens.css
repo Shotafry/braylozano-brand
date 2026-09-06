@@ -1,0 +1,39 @@
+/* Tokens de marca de Bray Lozano. Direccion "Dos tintas": la pagina es gris
+   claro y todo lo instrumental (terminales, codigo, tablas de datos) va en
+   grafito, con el cian como unico acento y como puente entre los dos mundos.
+
+   Este es el unico fichero del ecosistema con valores de color en crudo.
+   Cualquier otro sitio los usa por variable. */
+
+:root {
+  color-scheme: light;
+
+  /* Pagina */
+  --bl-bg: #E4E8EC;
+  --bl-surface: #F2F4F6;
+  --bl-surface-2: #D6DCE2;
+  --bl-border: #C3CCD4;
+  --bl-ink: #0F161D;
+  --bl-ink-soft: #4E5B69;
+
+  /* Acento, unico de la marca */
+  --bl-accent: #0A8DAD;
+  --bl-accent-strong: #06B6D4;
+  --bl-on-accent: #08202A;
+
+  /* Panel grafito */
+  --bl-panel-bg: #0F161D;
+  --bl-panel-surface: #182129;
+  --bl-panel-ink: #E3E9EE;
+  --bl-panel-ink-soft: #8C99A6;
+  --bl-panel-border: #2A3644;
+  --bl-panel-accent: #22D3EE;
+
+  /* Tipografia: la mono es la personalidad, la sans hace legible un articulo */
+  --bl-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+  --bl-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Ritmo. El radio es cero a proposito: la marca es rectangular */
+  --bl-radio: 0px;
+  --bl-medida: 65ch;
+}

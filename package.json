@@ -1,0 +1,39 @@
+{
+  "name": "@braylozano/brand",
+  "version": "0.1.0",
+  "description": "Tokens, logotipo y guia de marca de Bray Lozano",
+  "scripts": {
+    "test": "vitest run",
+    "generar": "node scripts/generar-marca.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shotafry/braylozano-brand.git"
+  },
+  "author": "Bray Lozano",
+  "license": "UNLICENSED",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Shotafry/braylozano-brand/issues"
+  },
+  "homepage": "https://github.com/Shotafry/braylozano-brand#readme",
+  "private": true,
+  "devDependencies": {
+    "opentype.js": "^2.0.0",
+    "vitest": "^5.0.0"
+  },
+  "exports": {
+    "./tokens.css": "./tokens.css",
+    "./preset.css": "./preset.css",
+    "./geometria": "./scripts/geometria.mjs",
+    "./svg/*": "./svg/*"
+  },
+  "files": [
+    "tokens.css",
+    "preset.css",
+    "svg",
+    "scripts",
+    "fuentes",
+    "GUIA.md"
+  ]
+}

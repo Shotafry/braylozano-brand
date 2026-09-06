@@ -1,0 +1,23 @@
+/* Mapea los tokens de marca a utilidades de Tailwind v4.
+   Se importa DESPUES de tokens.css. */
+
+@theme inline {
+  --color-fondo: var(--bl-bg);
+  --color-superficie: var(--bl-surface);
+  --color-superficie-2: var(--bl-surface-2);
+  --color-borde: var(--bl-border);
+  --color-tinta: var(--bl-ink);
+  --color-tinta-suave: var(--bl-ink-soft);
+  --color-acento: var(--bl-accent);
+  --color-acento-fuerte: var(--bl-accent-strong);
+  --color-sobre-acento: var(--bl-on-accent);
+  --color-panel: var(--bl-panel-bg);
+  --color-panel-superficie: var(--bl-panel-surface);
+  --color-panel-tinta: var(--bl-panel-ink);
+  --color-panel-tinta-suave: var(--bl-panel-ink-soft);
+  --color-panel-borde: var(--bl-panel-border);
+  --color-panel-acento: var(--bl-panel-accent);
+
+  --font-mono: var(--bl-mono);
+  --font-sans: var(--bl-sans);
+}
