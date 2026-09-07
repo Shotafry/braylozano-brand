@@ -9,6 +9,7 @@
   --color-tinta: var(--bl-ink);
   --color-tinta-suave: var(--bl-ink-soft);
   --color-acento: var(--bl-accent);
+  --color-acento-texto: var(--bl-accent-text);
   --color-acento-fuerte: var(--bl-accent-strong);
   --color-sobre-acento: var(--bl-on-accent);
   --color-panel: var(--bl-panel-bg);

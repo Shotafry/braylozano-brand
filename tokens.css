@@ -21,6 +21,16 @@
   --bl-accent-strong: #06B6D4;
   --bl-on-accent: #08202A;
 
+  /* El acento para TEXTO sobre fondo claro. Es el mismo tono un veinte por
+     ciento mas oscuro, y existe por una medida: --bl-accent da 3,14 sobre el
+     fondo y 3,51 sobre la superficie, y el texto pequeño necesita 4,5. Este
+     da 4,56 y 5,09.
+
+     Se uso --bl-accent para los enlaces del pie a 12 pixeles y Lighthouse lo
+     canto. La regla: el acento pinta superficies y detalles graficos, y este
+     pinta las letras. */
+  --bl-accent-text: #08718A;
+
   /* Panel grafito */
   --bl-panel-bg: #0F161D;
   --bl-panel-surface: #182129;
