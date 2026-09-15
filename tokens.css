@@ -41,13 +41,13 @@
   --bl-panel-border: #2A3644;
   --bl-panel-accent: #22D3EE;
 
-  /* Tipografia, tres registros desde el 2026-09-15.
-     La display es el cartel: titulares y cifras grandes.
-     La sans es para leer.
-     La mono es el dato, y es Plex porque es la fuente con la que estan
-     trazadas las letras del logotipo: asi cada rotulo, fecha y boton habla
-     en la misma familia que la marca. */
-  --bl-display: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', system-ui, sans-serif;
+  /* Tipografia, dos familias desde el 2026-09-15 por la tarde.
+     La display es el cartel, titulares y cifras grandes, y es la misma
+     monoespaciada del logotipo, IBM Plex Mono, a peso 700: Bray vio la
+     grotesca montada y la leyo como comica, y la del logo es la que casa
+     con la marca. La sans es para leer. La mono a pesos normales es el dato,
+     y asi cada rotulo, fecha y boton habla en la misma familia que la marca. */
+  --bl-display: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
   --bl-sans: 'Onest Variable', 'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --bl-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
 

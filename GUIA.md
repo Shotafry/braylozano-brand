@@ -32,15 +32,15 @@ Es el único acento y se raciona. Va en el cursor que parpadea, en los rótulos 
 
 ## Tipografía
 
-Tres familias, cada una con un registro, todas autohospedadas con `@fontsource`.
+Dos familias, autohospedadas con `@fontsource`.
 
 | Familia | Registro | Token |
 |---|---|---|
-| **Bricolage Grotesque** | Titulares y cifras grandes. Pesos 700 y 800, interletrado negativo entre -0,03em y -0,05em | `--bl-display` |
+| **IBM Plex Mono** a peso 700 | Titulares y cifras grandes. Interletrado negativo de -0,04em, porque una monoespaciada a tamaño de cartel se lee suelta sin apretar | `--bl-display` |
 | **Onest** | Cuerpo de texto y párrafos largos | `--bl-sans` |
-| **IBM Plex Mono** | Rótulos, fechas, datos, botones, navegación y todo lo que huela a terminal | `--bl-mono` |
+| **IBM Plex Mono** a pesos 400 a 600 | Rótulos, fechas, datos, botones, navegación y todo lo que huela a terminal | `--bl-mono` |
 
-La monoespaciada es Plex y no otra por el logotipo: las letras de la marca compuesta están trazadas en IBM Plex Mono SemiBold, así que cada rótulo y cada dato del sitio hablan en la misma familia que la marca. **El logotipo no se redibuja para casar con los titulares.** Un logotipo es un artefacto fijo, no texto de interfaz, y una palabra monoespaciada junto a un titular en grotesca es una pareja clásica.
+Los titulares van en la misma familia que el logotipo, trazado en IBM Plex Mono SemiBold. Se probó una grotesca para el cartel (Bricolage Grotesque) y Bray la leyó montada como cómica; la del logo casa con la marca y quita una familia del sistema. El logotipo no se redibuja nunca: es un artefacto fijo.
 
 El texto en prosa se mantiene cerca de 65 caracteres de ancho, que es el token `--bl-medida`.
 
@@ -50,13 +50,13 @@ En píxeles a 1280 de ancho. En el código van en rem y los tamaños grandes baj
 
 | Papel | Tamaño | Familia |
 |---|---|---|
-| Nombre en el hero | 118 | Bricolage 800 |
-| Cifra destacada | 96 | Bricolage 700 |
-| Título de la isla de contacto | 88 | Bricolage 700 |
-| Título de sección | 58 a 66 | Bricolage 700 |
-| Cifra de tarjeta | 56 | Bricolage 700 |
-| Cita | 48 | Bricolage 600 |
-| Título de tarjeta | 36 | Bricolage 700 |
+| Nombre en el hero | 92 | Plex Mono 700 |
+| Cifra destacada | 80 | Plex Mono 700 |
+| Título de la isla de contacto | 64 | Plex Mono 700 |
+| Título de sección | 36 a 54 | Plex Mono 700 |
+| Cifra de tarjeta | 48 | Plex Mono 700 |
+| Cita | 40 | Plex Mono 600 |
+| Título de tarjeta | 30 | Plex Mono 700 |
 | Tesis del hero | 26 | Onest 400 |
 | Párrafo de presentación | 20 | Onest 400 |
 | Cuerpo | 17 | Onest 400 |
