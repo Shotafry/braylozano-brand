@@ -1,6 +1,6 @@
 {
   "name": "@braylozano/brand",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Tokens, logotipo y guia de marca de Bray Lozano",
   "scripts": {
     "test": "vitest run",

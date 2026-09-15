@@ -8,10 +8,12 @@
 :root {
   color-scheme: light;
 
-  /* Pagina */
-  --bl-bg: #E4E8EC;
-  --bl-surface: #F2F4F6;
-  --bl-surface-2: #D6DCE2;
+  /* Pagina. Los tres primeros subieron de claridad el 2026-09-15, con la
+     direccion "Cartel y dato": titulares grandes piden aire y blanco, y el
+     gris medio de antes apagaba la pagina. */
+  --bl-bg: #F4F6F8;
+  --bl-surface: #FFFFFF;
+  --bl-surface-2: #EAEEF1;
   --bl-border: #C3CCD4;
   --bl-ink: #0F161D;
   --bl-ink-soft: #4E5B69;
@@ -39,9 +41,15 @@
   --bl-panel-border: #2A3644;
   --bl-panel-accent: #22D3EE;
 
-  /* Tipografia: la mono es la personalidad, la sans hace legible un articulo */
+  /* Tipografia, tres registros desde el 2026-09-15.
+     La display es el cartel: titulares y cifras grandes.
+     La sans es para leer.
+     La mono es el dato, y es Plex porque es la fuente con la que estan
+     trazadas las letras del logotipo: asi cada rotulo, fecha y boton habla
+     en la misma familia que la marca. */
+  --bl-display: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', system-ui, sans-serif;
+  --bl-sans: 'Onest Variable', 'Onest', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --bl-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
-  --bl-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   /* Ritmo. El radio es cero a proposito: la marca es rectangular */
   --bl-radio: 0px;

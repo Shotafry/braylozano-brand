@@ -19,6 +19,7 @@
   --color-panel-borde: var(--bl-panel-border);
   --color-panel-acento: var(--bl-panel-accent);
 
+  --font-display: var(--bl-display);
   --font-mono: var(--bl-mono);
   --font-sans: var(--bl-sans);
 }

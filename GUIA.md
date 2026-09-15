@@ -1,6 +1,6 @@
 # Guía de marca de Bray Lozano
 
-Una página con lo que hay que saber para usar la marca sin desviarla. La dirección visual se llama Dos tintas: la página es gris claro y todo lo instrumental (terminales, código, tablas de datos) va en grafito, con el cian como único acento y como puente entre los dos mundos.
+Una página con lo que hay que saber para usar la marca sin desviarla. La dirección visual se llama **Cartel y dato** desde el 15 de septiembre de 2026: el titular a tamaño de cartel, que dice una cosa y se lee desde lejos, y el dato en monoespaciada, pequeño, exacto y con su fuente al lado. La paleta sigue siendo la de Dos tintas: página clara y todo lo instrumental en grafito, con el cian como único acento y como puente entre los dos mundos. La escala es el efecto: no hay glitch, ni partículas, ni neón.
 
 ## Paleta
 
@@ -8,9 +8,9 @@ Estos quince valores son los únicos colores del ecosistema, y viven solo en `to
 
 | Token | Valor | Para qué |
 |---|---|---|
-| `--bl-bg` | `#E4E8EC` | Fondo de página |
-| `--bl-surface` | `#F2F4F6` | Tarjetas y bloques elevados |
-| `--bl-surface-2` | `#D6DCE2` | Rellenos secundarios, etiquetas |
+| `--bl-bg` | `#F4F6F8` | Fondo de página |
+| `--bl-surface` | `#FFFFFF` | Tarjetas y celdas. Se separan del fondo por el blanco, no por una sombra |
+| `--bl-surface-2` | `#EAEEF1` | Un escalón por debajo del blanco, para una sección entera |
 | `--bl-border` | `#C3CCD4` | Filetes y separadores |
 | `--bl-ink` | `#0F161D` | Texto principal |
 | `--bl-ink-soft` | `#4E5B69` | Texto secundario |
@@ -24,13 +24,44 @@ Estos quince valores son los únicos colores del ecosistema, y viven solo en `to
 | `--bl-panel-border` | `#2A3644` | Filetes sobre panel |
 | `--bl-panel-accent` | `#22D3EE` | Cian sobre panel, más claro para que aguante el contraste |
 
-El cian cambia de valor según el suelo a propósito. El de tinta se apaga sobre fondo claro para no vibrar, y el de panel se aclara para no perderse en el grafito.
+El cian cambia de valor según el suelo a propósito. El de tinta se apaga sobre fondo claro para no vibrar, y el de panel se aclara para no perderse en el grafito. Para texto pequeño sobre claro se usa `--bl-accent-text`, que es el que cumple 4,5 de contraste.
+
+### Dónde va el cian
+
+Es el único acento y se raciona. Va en el cursor que parpadea, en los rótulos de sección en monoespaciada, en las cifras grandes sobre grafito, en el marco fino detrás del retrato, en enlaces y botones, y en **una palabra por titular como máximo**, solo donde la palabra lo merece. No va en fondos grandes, ni en más de una palabra por titular, ni en los títulos de tarjeta.
 
 ## Tipografía
 
-Dos familias, ambas autohospedadas con `@fontsource`. **IBM Plex Mono** para títulos, etiquetas, fechas, datos y todo lo que huela a terminal: es la personalidad de la marca. **IBM Plex Sans** para el cuerpo de texto: es lo que hace que se pueda leer un artículo largo sin cansarse.
+Tres familias, cada una con un registro, todas autohospedadas con `@fontsource`.
 
-Salen de la misma familia, así que conviven sin choque. El texto en prosa se mantiene cerca de 65 caracteres de ancho, que es el token `--bl-medida`.
+| Familia | Registro | Token |
+|---|---|---|
+| **Bricolage Grotesque** | Titulares y cifras grandes. Pesos 700 y 800, interletrado negativo entre -0,03em y -0,05em | `--bl-display` |
+| **Onest** | Cuerpo de texto y párrafos largos | `--bl-sans` |
+| **IBM Plex Mono** | Rótulos, fechas, datos, botones, navegación y todo lo que huela a terminal | `--bl-mono` |
+
+La monoespaciada es Plex y no otra por el logotipo: las letras de la marca compuesta están trazadas en IBM Plex Mono SemiBold, así que cada rótulo y cada dato del sitio hablan en la misma familia que la marca. **El logotipo no se redibuja para casar con los titulares.** Un logotipo es un artefacto fijo, no texto de interfaz, y una palabra monoespaciada junto a un titular en grotesca es una pareja clásica.
+
+El texto en prosa se mantiene cerca de 65 caracteres de ancho, que es el token `--bl-medida`.
+
+## Escala
+
+En píxeles a 1280 de ancho. En el código van en rem y los tamaños grandes bajan en móvil con `clamp`.
+
+| Papel | Tamaño | Familia |
+|---|---|---|
+| Nombre en el hero | 118 | Bricolage 800 |
+| Cifra destacada | 96 | Bricolage 700 |
+| Título de la isla de contacto | 88 | Bricolage 700 |
+| Título de sección | 58 a 66 | Bricolage 700 |
+| Cifra de tarjeta | 56 | Bricolage 700 |
+| Cita | 48 | Bricolage 600 |
+| Título de tarjeta | 36 | Bricolage 700 |
+| Tesis del hero | 26 | Onest 400 |
+| Párrafo de presentación | 20 | Onest 400 |
+| Cuerpo | 17 | Onest 400 |
+| Texto secundario | 14,5 a 15,5 | Onest 400 |
+| Rótulo, dato, botón | 11 a 13 | Plex Mono 400 y 500 |
 
 ## Símbolo
 
@@ -71,6 +102,8 @@ Tres gestos, siempre los mismos, para que todo se sienta de una pieza.
 
 Texto que se escribe como en una terminal, una sola vez por página y solo en el titular. Un cursor que parpadea tras los títulos y tras la marca, que es la firma silenciosa. Y aparición por desplazamiento de doce píxeles con un fundido corto, sin rebotes ni escalas.
 
+La dosis es **un momento orquestado por página**, no un gesto en cada sección. En la portada es el hero cinemático; en las demás, el título con su cursor y nada más hasta que el visitante baja.
+
 Todo se desactiva con `prefers-reduced-motion`. Lo que no hay en el hub es glitch, scanlines, partículas ni neón; eso se reserva para los subdominios de proyectos.
 
 ## Cómo se usa
@@ -84,7 +117,7 @@ npm i github:Shotafry/braylozano-brand
 @import '@braylozano/brand/preset.css';
 ```
 
-El preset mapea los tokens a utilidades de Tailwind v4, así que quedan disponibles como `bg-fondo`, `text-tinta`, `border-borde`, `text-acento`, `bg-panel` y sus equivalentes.
+El preset mapea los tokens a utilidades de Tailwind v4, así que quedan disponibles como `bg-fondo`, `text-tinta`, `border-borde`, `text-acento`, `bg-panel` y sus equivalentes, y las tres familias como `font-display`, `font-sans` y `font-mono`.
 
 Para regenerar los SVG después de tocar la geometría:
 
